@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rest_api/network/dio_client.dart';
 
 import '../utils.dart';
-import 'posts_screen.dart';
 
 class UpdatePostScreen extends StatefulWidget {
   const UpdatePostScreen({super.key});

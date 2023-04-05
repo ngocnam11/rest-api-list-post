@@ -15,8 +15,11 @@ class DioClient {
     ),
   )..interceptors.add(CustomIntercepter());
 
-  Future<List<Post>> getPosts() async {
-    final responses = await dio.get('/posts');
+  Future<List<Post>> getPosts([int startIndex = 0]) async {
+    final responses = await dio.get(
+      '/posts',
+      queryParameters: {'_start': startIndex, '_limit': 20},
+    );
 
     if (responses.statusCode == 200) {
       final posts = responses.data as List<dynamic>;
