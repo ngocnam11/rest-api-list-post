@@ -1,6 +1,11 @@
-# rest_api
+# REST API App with JSONPlaceholder
 
 A new Flutter project.
+
+# Packages Used
+ * [Dio](https://pub.dev/packages/dio): Allows to make network requests.
+ * [Equatable](https://pub.dev/packages/equatable): Simplify the process of comparing object.
+ * [FlutterBloc](https://pub.dev/packages/flutter_bloc): For state management.
 
 ## Getting Started
 
